@@ -14,6 +14,7 @@ def csv_dict_reader(file_obj):
         with open('cmc-finish.csv', 'a') as f:
             writer = csv.writer(f)
             writer.writerow([item[0], item[1]])
+    return companies
 
 
 if __name__ == "__main__":
